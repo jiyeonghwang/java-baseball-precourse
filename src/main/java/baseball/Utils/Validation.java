@@ -1,12 +1,6 @@
 package baseball.Utils;
 
-import baseball.View.OutputView;
-
 public class Validation {
-    private Validation() {
-        throw new IllegalStateException("Utility class");
-    }
-
     public static boolean isValidation(String num) {
         if (num.length() != 3) return false;
         if (!num.matches("[1-9]+")) return false;
@@ -18,9 +12,11 @@ public class Validation {
         return true;
     }
 
-    public static void isReGameValidation(String input) {
+    public static boolean isReGameValidation(String input) {
+        boolean result = true;
         if (!input.matches("[1-2]+") || input.length() > 1) {
-            throw new IllegalArgumentException(OutputView.getErrorMessage());
+            result = false;
         }
+        return result;
     }
 }

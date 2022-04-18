@@ -1,10 +1,11 @@
 package baseball;
 
 import baseball.Utils.BaseballGame;
-import baseball.Utils.Validation;
 import baseball.View.InputView;
 import baseball.View.OutputView;
 import baseball.domain.Baseball;
+
+import static baseball.Utils.Validation.isReGameValidation;
 
 public class Application {
     public static void main(String[] args) {
@@ -19,7 +20,9 @@ public class Application {
     public static boolean isNewGame() {
         OutputView.printResult();
         String input = InputView.printInputReGame();
-        Validation.isReGameValidation(input);
+        if (!isReGameValidation(input)) {
+            OutputView.getErrorMessage();
+        }
         return OutputView.printGameEnd(Integer.parseInt(input));
     }
 }
