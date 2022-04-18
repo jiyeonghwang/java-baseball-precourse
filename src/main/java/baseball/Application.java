@@ -1,11 +1,11 @@
 package baseball;
 
-import baseball.Utils.BaseballGame;
-import baseball.View.InputView;
-import baseball.View.OutputView;
+import baseball.utils.BaseballGame;
+import baseball.view.InputView;
+import baseball.view.OutputView;
 import baseball.domain.Baseball;
 
-import static baseball.Utils.Validation.isReGameValidation;
+import static baseball.utils.Validation.isReGameValidation;
 
 public class Application {
     public static void main(String[] args) {

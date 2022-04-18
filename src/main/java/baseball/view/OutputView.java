@@ -1,4 +1,4 @@
-package baseball.View;
+package baseball.view;
 
 public class OutputView {
     private static final String ERROR_MESSAGE = "잘못된 값을 입력하였습니다.";

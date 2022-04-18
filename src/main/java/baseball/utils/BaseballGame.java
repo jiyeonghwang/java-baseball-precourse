@@ -1,7 +1,7 @@
-package baseball.Utils;
+package baseball.utils;
 
-import baseball.View.InputView;
-import baseball.View.OutputView;
+import baseball.view.InputView;
+import baseball.view.OutputView;
 import baseball.domain.Baseball;
 
 import static camp.nextstep.edu.missionutils.Randoms.pickNumberInRange;

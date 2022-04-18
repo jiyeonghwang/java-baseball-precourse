@@ -1,4 +1,4 @@
-package baseball.Utils;
+package baseball.utils;
 
 public class Validation {
     public static boolean isValidation(String num) {

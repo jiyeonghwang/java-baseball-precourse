@@ -2,10 +2,10 @@ package baseball;
 
 import org.junit.jupiter.api.Test;
 
-import static baseball.Utils.Validation.isReGameValidation;
+import static baseball.utils.Validation.isReGameValidation;
 import static org.junit.jupiter.api.Assertions.*;
 
-import static baseball.Utils.Validation.isValidation;
+import static baseball.utils.Validation.isValidation;
 
 public class ValidationTest {
     @Test

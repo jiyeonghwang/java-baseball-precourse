@@ -1,6 +1,6 @@
 package baseball;
 
-import baseball.Utils.BaseballGame;
+import baseball.utils.BaseballGame;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.*;
