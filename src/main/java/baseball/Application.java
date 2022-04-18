@@ -1,6 +1,7 @@
 package baseball;
 
 import baseball.Utils.BaseballGame;
+import baseball.View.InputView;
 import baseball.domain.Baseball;
 
 import java.util.logging.LogRecord;
@@ -12,5 +13,8 @@ public class Application {
         Baseball baseball = new Baseball();
         baseball.setComputer(baseballGame.getComputerNumber());
         System.out.println(baseball.getComputer().toString());
+
+        String num = InputView.printInputRequest();
+        System.out.println(num);
     }
 }
