@@ -28,6 +28,9 @@ public class BaseballGame {
             throw new IllegalArgumentException(OutputView.getErrorMessage());
         }
         baseball.setUser(num);
-        System.out.println(baseball.getUser().toString());
+        System.out.println(baseball.result());
+        if (!baseball.isVictory()) {
+            startGame(baseball);
+        }
     }
 }
