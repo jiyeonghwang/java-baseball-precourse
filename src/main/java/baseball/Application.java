@@ -12,9 +12,6 @@ public class Application {
         BaseballGame baseballGame = new BaseballGame();
         Baseball baseball = new Baseball();
         baseball.setComputer(baseballGame.getComputerNumber());
-        System.out.println(baseball.getComputer().toString());
-
-        String num = InputView.printInputRequest();
-        System.out.println(num);
+        baseballGame.startGame(baseball);
     }
 }
