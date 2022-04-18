@@ -6,9 +6,6 @@ import baseball.View.InputView;
 import baseball.View.OutputView;
 import baseball.domain.Baseball;
 
-import java.util.logging.LogRecord;
-import java.util.logging.Logger;
-
 public class Application {
     public static void main(String[] args) {
         do {
